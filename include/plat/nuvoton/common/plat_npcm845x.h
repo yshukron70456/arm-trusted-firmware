@@ -22,6 +22,8 @@ void plat_gic_pcpu_init(void);
 
 void __dead2 npcm845x_system_off(void);
 void __dead2 npcm845x_system_reset(void);
+void npcm845x_wd2_ehf_setup(void);
+void __dead2 npcm845x_wdg_from_secure(bool pretimeout);
 void npcm845x_pwr_domain_on_finish(const psci_power_state_t *target_state);
 bool npcm845x_is_wakeup_src_irqsteer(void);
 void __dead2 npcm845x_pwr_down_wfi(const psci_power_state_t *target_state);
